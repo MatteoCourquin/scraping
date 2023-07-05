@@ -1,17 +1,8 @@
 <?php
 
-// require 'vendor/autoload.php';
+use MatteoCourquin\Airbnb\Api;
 
-// use Symfony\Component\DomCrawler\Crawler;
-// use Symfony\Component\HttpClient\HttpClient;
+require_once __DIR__ . '/../vendor/autoload.php';
 
-// $client = HttpClient::create();
-// $response = $client->request('GET', 'https://www.airbnb.fr/');
-// $html = $response->getContent();
-
-// $crawler = new Crawler($html);
-// $title = $crawler->filter('title')->text();
-
-// echo $title;
-
-?>
+$api = new Api();
+var_dump($api->getAirbnbName());

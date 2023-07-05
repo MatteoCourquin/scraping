@@ -4,11 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe
+class ComposerStaticInit7859366c3c4d009bf230fe732017a205
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
@@ -19,15 +20,21 @@ class ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Contracts\\HttpClient\\' => 29,
+            'Symfony\\Component\\HttpClient\\' => 29,
             'Symfony\\Component\\DomCrawler\\' => 29,
+            'Symfony\\Component\\CssSelector\\' => 30,
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
+            'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
         'M' => 
         array (
-            'Matteocourquin\\Airbnb\\' => 22,
+            'MatteoCourquin\\Airbnb\\' => 22,
             'Masterminds\\' => 12,
         ),
         'D' => 
@@ -45,15 +52,39 @@ class ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Service\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
+        'Symfony\\Contracts\\HttpClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-client-contracts',
+        ),
+        'Symfony\\Component\\HttpClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-client',
+        ),
         'Symfony\\Component\\DomCrawler\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Matteocourquin\\Airbnb\\' => 
+        'MatteoCourquin\\Airbnb\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -1192,9 +1223,9 @@ class ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit06a55a17d47e1a45c6c5fd179c1be9fe::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7859366c3c4d009bf230fe732017a205::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7859366c3c4d009bf230fe732017a205::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7859366c3c4d009bf230fe732017a205::$classMap;
 
         }, null, ClassLoader::class);
     }
