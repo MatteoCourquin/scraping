@@ -30,7 +30,4 @@ class Api
 
 $api = new Api();
 $h2Elements = $api->getH2Elements();
-
-foreach ($h2Elements as $h2Element) {
-    echo $h2Element . "\n";
-}
+echo json_encode($h2Elements);
