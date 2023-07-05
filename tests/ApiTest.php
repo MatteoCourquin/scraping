@@ -12,7 +12,7 @@ class ApiTest extends TestCase
         $api = new Api();
         $h2Elements = $api->getH2Elements();
 
-        $this->assertIsArray($h2Elements); // Vérifie que $h2Elements est un tableau
-        $this->assertNotEmpty($h2Elements); // Vérifie que $h2Elements n'est pas vide
+        $this->assertIsArray($h2Elements);
+        $this->assertNotEmpty($h2Elements);
     }
 }
